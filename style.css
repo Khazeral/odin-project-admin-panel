@@ -1,4 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+body {
+  display: flex;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+#navbar {
+  color: white;
+  background-color: #1892d5;
+  width: 12vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  row-gap: 5vh;
+}
+
+.mdi {
+  display: flex;
+  align-items: center;
+  column-gap: 2vw;
+}
+
+.mdi-view-dashboard::before {
+  font-size: 2.5rem;
+}
+
+#logo-container > span {
+  font-size: 1.5rem;
+}
+
+#sub-menus,
+#options {
+  padding: 0.9vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+#sub-menus > .mdi::before,
+#options > .mdi::before {
+  font-size: 1.2rem;
+}
+
+#sub-menus > span,
+#options > span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 30px;
+}
+
+#top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#search-bar {
+  display: flex;
+  height: min-content;
+  column-gap: 1vw;
+}
+
+.mdi-magnify::before,
+.mdi-bell-ring-outline::before {
+  font-size: 1.5rem;
+}
+
+#search-bar > input {
+  border-radius: 10px;
+  background-color: #e2e7f1;
+  width: 30vw;
+  height: 3vh;
+  border: transparent;
+}
+
+#right-part {
+  width: 25%;
+  display: flex;
+  height: min-content;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#right-part > img {
+  width: 50px;
+}
+
+#right-part > p {
+  font-weight: 600;
+}
+
+#down-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#salutation-component {
+  display: flex;
+  align-items: center;
+  column-gap: 1vw;
+  font-weight: 600;
+  flex-grow: 0.4;
+}
+
+#salutation-component > img {
+  width: 80px;
+}
+
+#hi-message > p:nth-child(2) {
+  font-size: 1.3rem;
+}
+
+#bunch-buttons {
+  display: flex;
+  column-gap: 2vw;
+}
+
+.button {
+  background-color: #1892d5;
+  padding: 10px 20px;
+  color: white;
+  border: transparent;
+  border-radius: 25px;
+  min-width: 5vw;
 }
