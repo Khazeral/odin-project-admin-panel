@@ -5,6 +5,7 @@
   padding: 0;
   font-size: 16px;
   font-family: Roboto;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,11 +15,12 @@ body {
 
 main {
   width: 100%;
+  background-color: #e2e7f1;
 }
 #navbar {
   color: white;
   background-color: #1892d5;
-  width: 12vw;
+  width: 22vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -60,6 +62,7 @@ main {
 }
 
 header {
+  background-color: white;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -141,4 +144,114 @@ header {
   border: transparent;
   border-radius: 25px;
   min-width: 5vw;
+}
+
+#container-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#projects {
+  background-color: #e2e7f1;
+  width: 65%;
+  height: max-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: minmax(150px, auto);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.project {
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.line {
+  width: 2%;
+  background-color: #ecb52a;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.project-content {
+  display: flex;
+  width: 98%;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.project-actions {
+  display: flex;
+  align-self: flex-end;
+  column-gap: 1vw;
+}
+
+.mdi-star-plus-outline::before,
+.mdi-eye-plus-outline::before,
+.mdi-source-fork::before {
+  font-size: 1.2rem;
+}
+
+#a-t {
+  width: 25%;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+#announcement > h2,
+#trending > h2 {
+  padding-bottom: 20px;
+}
+
+.announcement-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-box > p {
+  font-size: 14px;
+  color: #666;
+}
+
+.trending-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.pseudo {
+  color: #666;
+  font-size: 14px;
 }
